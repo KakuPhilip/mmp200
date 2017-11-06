@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>The Sonic Music Festival</title>
+    <link rel="stylesheet" href="style.css">
+      
+      <script>
+          // The following function toggles the visibility of an element
+      function toggleVis(id){
+        if (document.getElementById(id).style.display=="block"){
+              document.getElementById(id).style.display="none";}
+        else {
+              document.getElementById(id).style.display="block";}
+      }
+      </script>
+      
+      <script src="https://use.fontawesome.com/257ea50967.js"></script>
+  </head>
+  <body>
+      <div class="container-fluid"> <!-- this div holds all content in the page -->
+        <nav>
+            <button id="toggle-menu" onclick="toggleVis('mainNav');">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+          <ul id="mainNav">
+            <li><a href="#">Tickets</a>
+                <ul>
+                    <li><a href="#">Festival Schedule</a></li>
+                    <li><a href="#">1 Day Ticket</a></li>
+                    <li><a href="#">2 Day Ticket</a></li>
+                </ul>
+              </li>
+            <li><a href="#">Performers</a>
+                <ul>
+                    <li><a href="#">Pop Music</a></li>
+                    <li><a href="#">Rock Music</a></li>
+                    <li><a href="#">Folk Music</a></li>
+                    <li><a href="#">Electronic Music</a></li>
+                </ul>
+              </li>
+            <li><a href="#">Announcements</a>
+                <ul>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Time</a></li>
+                    <li><a href="#">Attentions</a></li>
+                </ul>
+              </li>
+            <li><a href="#">News</a>
+                <ul>
+                    <li><a href="#">Perfoemers</a></li>
+                    <li><a href="#">Festival</a></li>
+                </ul>
+              </li>
+            <li><a href="#">Attraction</a>
+            <li><a href="#">Sponsor</a>
+          </ul>
+        </nav>
+          <header>
+          <h1><img src="images/logo.png" alt="The Sonic Music Festival"></h1>
+          <h2>SEPTEMBER 02-03, 2017 | Central Park, NEW YORK CITY</h2>
+        </header>
+        
+        <div id="content">
+            <div class="row">
+                <div id="merch" class="col">
+                    <h3>RECENT NEWS</h3>
+                    <button>VIEW HERE</button>
+                </div><!-- closing .col --> 
+                <div id="friday" class="col">
+                    <h3>SATURDAY ASPECT</h3>
+                    <button>VIEW HERE</button>                    
+                </div><!-- closing .col --> 
+                <div id="sat" class="col">
+                    <h3>SUNDAY ASPECT</h3>
+                    <button>VIEW HERE</button>                    
+                </div><!-- closing .col --> 
+                <div id="sun" class="col">
+                    <h3>PERFORMERS INFO</h3>
+                    <button>VIEW HERE</button>
+                </div> <!-- closing .col -->   
+            </div> <!-- closing .row -->
+            <div id="large-photo">
+                <h3>We are looking forward to seeing you! </h3>
+                <button>CLICK FOR MORE INFORMATIONS</button>
+            </div>
+        </div> <!-- closing #content -->
+        <footer>
+            <i class="fa fa-twitter-square fa-2x"></i>
+            <i class="fa fa-facebook-square fa-2x"></i>
+            <i class="fa fa-youtube-square fa-2x"></i>
+            <i class="fa fa-instagram fa-2x"></i>
+            <i class="fa fa-google-plus-square fa-2x"></i>
+            <i class="fa fa-music fa-2x"></i>
+        </footer>
+    </div> <!-- closing .container-fluid -->
+  </body>
+</html>

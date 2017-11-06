@@ -1,0 +1,187 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #1b016a;
+    font-family: arial;
+    color: #fff;
+}
+
+/* ********** NAVIGATION **********  */
+
+
+#toggle-menu{
+    background-color:transparent;
+    color:#fff;
+    border: none;
+    font-size:2em;
+}
+nav{
+    text-transform: uppercase;
+    margin: 1em;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+nav a{
+    color:#fff;
+    text-decoration: none;
+}
+nav ul{
+    display:none;
+    width:100%;
+    list-style-type: none;
+}
+
+nav li{
+    border-bottom: 1px solid #fff;
+    padding:0.5em;
+    }
+
+nav li ul{  /*  show dropdown menu in mobile  */
+    display:block;
+    }
+
+nav li li{
+        border:none;
+}
+
+/* ********** HEADER **********  */
+
+header {
+    text-align: center;
+    clear:both; /* prevents any element from floating to the right or left of the header */
+}
+
+header img {
+    max-width: 80%;
+}
+
+h2{
+    border-top:solid 3px #e2fb96;
+    border-bottom:solid 3px #e2fb96;
+    padding: 0.5em 0;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-weight: normal;
+    color: #e2fb96;
+}
+
+/* ********** LAYOUT **********  */
+
+.row{  /* flex container div */
+        display:flex;
+        flex-direction: column;
+    }
+
+#large-photo{
+    height: 360px;
+    border: solid 1px gray;
+    background-image: url("images/big-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+.col{
+    height: 16em;
+    border: solid 1px gray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#merch{
+    background-image: url("images/col1-img.jpg");
+    color: red;
+}
+
+#friday{
+    background-image: url("images/col2-img.jpg");
+    color: red;
+}
+
+#sat{
+    background-image: url("images/col3-img.jpg");
+    color: red;
+}
+#sun{
+    background-image: url("images/col4-img.jpg");
+    color: red;
+}
+
+/* ********** FOOTER **********  */
+footer{
+    text-align:center;
+}
+
+footer a{
+    color:#fff;
+}
+
+/* ********** FOR LARGER VIEWPORTS (FROM IPAD AND UP) **********  */
+
+@media (min-width:640px){
+   
+    #toggle-menu{        /* hiding the button */
+        display:none;
+    }
+    
+    nav ul {             /* displaying the button */
+        display:block;
+        text-align: center;
+    }
+    
+    nav {
+        height:4em;
+    }
+     
+    nav li{
+        display: inline-block; /* turns menu horizontal */
+        border:none;
+        margin: 0.5em 1em;
+    }
+    
+    nav li ul{ /* dropdown menu */
+        display:none;
+        position:absolute; /* removes item from the normal flow of HTML. 
+                            There will not be reserved space for it and
+                            it will overlap other elements */
+        background-color: #fff;
+        width:auto; /* will be as wide as its content */
+        text-align: left;
+    }
+    
+    nav li:hover ul{
+        display:block;
+    }
+        
+    nav li li{ /* dropdown menu elements */
+        display:block;   /* makes sure it is vertical */
+    } 
+       nav li li a{
+        color:#000;   
+    }
+    
+    /* layout */
+    .row{  /* flex container div */
+        flex-direction: row; /* reverses the column direction set for mobile to row */
+    }
+    
+    .col{
+        width:25%;
+    }
+
+}
