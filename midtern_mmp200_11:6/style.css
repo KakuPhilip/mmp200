@@ -14,20 +14,20 @@ body{
 
 #toggle-menu{
     background-color:transparent;
-    color:#fff;
     border: none;
     font-size:2em;
+    color: #e2fb96;
 }
 nav{
     text-transform: uppercase;
-    margin: 1em;
     display:flex;
     flex-direction: column;
     align-items:flex-end;
+    line-height: 2em;
 }
 
 nav a{
-    color:#fff;
+    color:#e2fb96;
     text-decoration: none;
 }
 nav ul{
@@ -37,7 +37,7 @@ nav ul{
 }
 
 nav li{
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #e2fb96;
     padding:0.5em;
     }
 
@@ -53,7 +53,10 @@ nav li li{
 
 header {
     text-align: center;
-    clear:both; /* prevents any element from floating to the right or left of the header */
+    clear:both;
+    padding: 0.5em 0;
+    margin-top: 1em;
+    margin-bottom: 0.5em; /* prevents any element from floating to the right or left of the header */
 }
 
 header img {
@@ -68,6 +71,16 @@ h2{
     margin-bottom: 1em;
     font-weight: normal;
     color: #e2fb96;
+    text-align: center; 
+}
+
+h3{
+    text-align: center;
+}
+
+h4{
+    margin-top: 1px;
+    text-align: center;
 }
 
 /* ********** LAYOUT **********  */
@@ -89,10 +102,11 @@ h2{
     justify-content: center;
     align-items: center;
     color: red;
+    font-size: 50px;
 }
 
 .col{
-    height: 16em;
+    height: 23em;
     border: solid 1px gray;
     background-repeat: no-repeat;
     background-size: cover;
@@ -128,7 +142,11 @@ footer{
 }
 
 footer a{
-    color:#fff;
+    color:#e2fb96;
+}
+
+section{
+    margin-top: 10px;
 }
 
 /* ********** FOR LARGER VIEWPORTS (FROM IPAD AND UP) **********  */
@@ -149,19 +167,22 @@ footer a{
     }
      
     nav li{
-        display: inline-block; /* turns menu horizontal */
-        border:none;
+        display: inline-block;/* turns menu horizontal */
+        border: none;
         margin: 0.5em 1em;
-    }
+     }
+
+        
     
     nav li ul{ /* dropdown menu */
         display:none;
         position:absolute; /* removes item from the normal flow of HTML. 
                             There will not be reserved space for it and
                             it will overlap other elements */
-        background-color: #fff;
+        background-color: #1b016a;
         width:auto; /* will be as wide as its content */
         text-align: left;
+        border: solid 1px #e2fb96;
     }
     
     nav li:hover ul{
@@ -172,7 +193,7 @@ footer a{
         display:block;   /* makes sure it is vertical */
     } 
        nav li li a{
-        color:#000;   
+        color:#e2fb96;
     }
     
     /* layout */
